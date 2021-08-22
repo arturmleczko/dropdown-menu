@@ -37,7 +37,7 @@
     >
         {#if isExtensiveOption(selected)}
             <img class="img" src="./dist/img/icons/{selected.iconName}.png" alt="selected icon" />
-            <span class="fs12p fw-500 mr-3">{selected.name}</span>
+            <span class="fs12p fw-500">{selected.name}</span>
         {:else} 
             <span class="fs12p fw-500">{selected.name}</span>
         {/if}
