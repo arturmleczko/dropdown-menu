@@ -30,9 +30,9 @@
 		{
 			id: 7,
 			name: 'Pozycja 7'
-		},
+		}
 	];
 </script>
 
-<Dropdown {options}/>
+<Dropdown {options} />
 

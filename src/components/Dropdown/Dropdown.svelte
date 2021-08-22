@@ -1,7 +1,8 @@
 <script lang="ts">
     import DropdownOptionItem from './DropdownOptionItem.svelte'
     import { DropdownOption, ExtensiveOption } from "../../types/Dropdown";
-
+    
+    export let handleDataChange: Function = () => {};
     export let options: DropdownOption[] = [];
 
     let selected: DropdownOption = options[0];
@@ -16,6 +17,7 @@
         const id = e.detail.id;
         const selectedArr = options.filter(option => option.id === id);
         selected = selectedArr[0];
+        handleDataChange(selected);
         toggleMenu(); // do wywalenia
     }
 
